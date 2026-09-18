@@ -8,6 +8,12 @@ const app = express();
 app.use(express.json());
 const port = process.env.PORT || 3345;
 
+const MYSQL_CONNECTION=true
+const MYSQL_DB_NAME='dev_msquare_db'
+const MYSQL_DB_USER='root'
+const MYSQL_DB_PASS='pass'
+const MYSQL_HOST='https://wayo.com/db-server'
+
 const middleware = (req, res, next) => {
     const key = req.query['key']|| req.headers['key'];
     const iv = req.query['iv']|| req.headers['iv'];
