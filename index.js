@@ -7,6 +7,7 @@ const swagger =require( './swagger.js');
 const app = express();
 app.use(express.json());
 const port = process.env.PORT||3345;
+const AppName = process.env.APP_NAME
 
 const middleware = (req, res, next) => {
     const key = req.query['key']|| req.headers['key'];
