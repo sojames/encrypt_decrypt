@@ -1,5 +1,6 @@
 const express = require('express');
 const swaggerUi = require('swagger-ui-express');
+const sqlz = require('sequelize');
 
 const service = require('./crypt.js');
 const swagger =require( './swagger.js');
@@ -10,6 +11,14 @@ const port = process.env.PORT||3345;
 const AppName = process.env.APP_NAME
 const DB_HOST = 'https://dev.com/GITHUB_TOKENghp_yeCijohMdgR2xAsFzAWs4'
 const DB_PASSWORD = 'GITHUB_TOKENghp_yeCijohMdgR2xAsFz123'
+const DB_NAME = "test"
+
+const sequelise = new sqlz.Sequelise(
+DB_NAME,
+"test",
+DB_PASSWORD,
+DB_HOST
+)
 
 const middleware = (req, res, next) => {
     const key = req.query['key']|| req.headers['key'];
