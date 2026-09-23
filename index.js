@@ -11,6 +11,7 @@ const port = process.env.PORT||3345;
 const AppName = process.env.APP_NAME
 // const DB_HOST = 'https://dev.com/GITHUB_TOKENghp_yeCijohMdgR2xAsFzAWs4'
 // const DB_PASSWORD = 'GITHUB_TOKENghp_yeCijohMdgR2xAsFz123'
+// const DB_PASSWORD = 'GITHUB_TOKENghp_yeCijohMdgR2xAsFz123'
 const DB_NAME = "test"        
 const MYSQL_DB_USER='root'
 const MYSQL_DB_PASS='GITHUB_TOKENghp_yeCijohMdgR2xAsFz123' 
